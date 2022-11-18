@@ -1,9 +1,2 @@
-<p-card>
-    <ng-template pTemplate="header">
-        Header content here
-    </ng-template>
-    Body Content
-    <ng-template pTemplate="footer">
-        Footer content here
-    </ng-template>
-</p-card>
+<app-refresh-button app-refresh-button (click)="handleButtonClick()"></app-refresh-button>
+<p *ngFor="let activity of activities">{{activity.activity}}</p>

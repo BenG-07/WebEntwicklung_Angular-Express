@@ -13,14 +13,14 @@ export class RefreshButtonComponent implements OnInit {
   public disabled = false;
 
   @Output()
-  public onClick = new EventEmitter<void>();
+  public onClick = new EventEmitter<MouseEvent>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  handleButtonClick() {
+  handleButtonClick($event: MouseEvent) {
     this.onClick.emit();
   }
 }

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RefreshButtonComponent } from './components/refresh-button/refresh-button.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { HomeComponent } from './components/pages/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

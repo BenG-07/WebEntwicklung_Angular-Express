@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from "@angular/router";
-import { Activity } from './models/activity-model.model'
+import { Activity } from './models/activity-model.model';
 import { QueryService } from './services/query.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'WebEntwicklung_Angular-Express';
   
   constructor(private router: Router, private query: QueryService) {
-
+    
   }
 
   public activities: Activity[] = [];
